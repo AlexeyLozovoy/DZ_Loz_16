@@ -17,7 +17,7 @@ class CvsF:
         pkv = (kv - 32) * (5/9)
 
 iz = input("Из чего пересчитываем? C/F: ")
-if iz == "c":
+if iz.lower() == "c":
     asd = CvsF().Cf(float(input("Ведите значение в градусах цельсия: ")))
 else:
     asd = CvsF().Fc(float(input("Ведите значение в градусах фарингейта: ")))
